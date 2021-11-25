@@ -2,7 +2,7 @@
 
 This project is about solving the number partitioning problem using simulated annealing. Simulated annealing is a classical metaheuristic used to find approximate solutions to optimisation problems in a large search space. It uses stochastic sampling to mimic the way materials cool down to more stable and ordered configuration.
 The proposed solution is written in python.
-Two files make up the project: in `SA_toolbox.py` you will find the functions needed to build the algorithm, as well as the algorithm itself. In `SA_results`, there are a set of plots to interpret the results and performance of the algorithm.
+Two files make up the project: in `SA_toolbox.py` you will find the functions needed to build the algorithm, as well as the algorithm itself. In `SA_results.ipynb`, there are a set of plots to interpret the results and performance of the algorithm.
 
 The libraries used in this project are the following:
 
