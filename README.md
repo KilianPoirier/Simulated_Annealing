@@ -2,10 +2,15 @@
 
 This project is about solving the number partitioning problem using simulated annealing. Simulated annealing is a classical metaheuristic used to find approximate solutions to optimisation problems in a large search space. It uses stochastic sampling to mimic the way materials cool down to more stable and ordered configuration.
 The proposed solution is written in python.
+Two files make up the project: in `SA_toolbox.py` you will find the functions needed to build the algorithm, as well as the algorithm itself. In `SA_results`, there are a set of plots to interpret the results and performance of the algorithm.
 
 The libraries used in this project are the following:
-numpy: numerical library used to make computations
-matplotlib.pyplot: graphic library for visualization
+
+`numpy` : numerical library used to make computations.
+
+`matplotlib.pyplot` : graphic library for visualization.
+
+`time` : library used to track time performance.
 
 ## Overall structure
 Our approach of simulated annealing highly relies on the definition of the Ising Hamiltonian (definition is given in the results notebook). It also makes use of the metropolis criterion (definition in the notebook) that contributes to the introduction of randomness in the search. Using this criterion, the search does not get stuck in local minima. This criterion depends on a hyperparameter (temperature) that controls how much random changes are accepted.
