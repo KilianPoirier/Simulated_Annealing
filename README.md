@@ -35,5 +35,7 @@ The functions must be imported in the notebook using `import SA_toolbox *`
 ### Description of the algorithm
 The program begins with a random partition of the number set. A first candidate is found using `init_random_candidate`. The temperature is initialized at T0. A candidate partition is found using `find_candidate` and we compute the difference between the current and candidate partition's energies. If the candidate energy is lower, the partition is updated. If not, the metropolis criterion is computed, it is based on Boltzmann thermal distribution. The lower the temperature, the lower the criterion gets. A random probability is compared to the criterion, if the criterion is larger, the partition is accepted. This operation is then looped and the temperature decreases at each iteration.
 
+The algorithm eventually reaches a halt if it finds the zero point energy or if the temperature gets below a certain threshold.
+
 ## Comments
 The approach presented shows good results for well chosen parameters (k and T0). By setting a temperature high enough and a cooling scheme slow enough, the simulated annealing algorithm manages to find the global minimum. When the minimum is not the expected zero energy, the algorithm converges to a statiscally optimal value.
